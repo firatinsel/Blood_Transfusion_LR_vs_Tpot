@@ -11,7 +11,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
 from sklearn.linear_model import LogisticRegression
-from operator import itemgetter
 from tpot import TPOTClassifier
 
 
