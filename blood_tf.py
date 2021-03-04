@@ -61,7 +61,7 @@ X_train.head()
 
 
 # Instantiating TPOTClassifier
-tpot = TPOTClassifier(generations=5, population_size=25, verbosity=2, scoring='roc_auc',
+tpot = TPOTClassifier(generations=5, population_size=20, verbosity=2, scoring='roc_auc',
                       disable_update_check=True,
                       config_dict='TPOT light')
 
@@ -116,6 +116,6 @@ lr_auc_score = roc_auc_score(y_test, lr.predict_proba(X_test_norm)[:, 1])
 print(f'\nAUC score: {lr_auc_score:.3f}')
 
 
-# TPOT Classifier Score : 0.778
+# TPOT Classifier Score : 0.785
 # 
 # Logistic Regression Score : 0.789
